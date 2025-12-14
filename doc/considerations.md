@@ -4,9 +4,7 @@ A filter length `N` that is too long for your dynamics of interest will induce a
 ![Phase Delay](./Oscq2PhaseDelay.png "Delay induced by Filter Length")
 
 The rule of thumb, for a minimum target frequency `f`, is to ensure the filter length `L` conforms to 
-$$
-L < \frac{\mu + \kappa + 2(n+1)}{2f(\kappa + n + 1)} = \frac{1}{2f \cdot delay(n,\mu,\kappa)}
-$$
+$L < \frac{\mu + \kappa + 2(n+1)}{2f(\kappa + n + 1)} = \frac{1}{2f \cdot delay(n,\mu,\kappa)}$.
 The value of $delay(n,\mu,\kappa)$, once the encoding has been set, is output by the helper function `./zdf -i`
 
 An increase in the sampling frequency, if possible, may be the easiest workaround. Shown here are the zeroth and second derivatives from the [introductory section](../README.md#filtering-me-softly) where the sampling frequency has doubled:

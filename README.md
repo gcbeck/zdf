@@ -23,9 +23,7 @@ It's just so *slow*. Sure, you're mostly looking at noise, but there's got to be
 For these reasons we were intrigued by the work of [Mboup et al](https://link.springer.com/article/10.1007/s11075-008-9236-1). They show how a Jacobi polynomial basis emerges quite naturally from consideration of the derivatives in a filtering context, where the two shape parameters are $\mu$ and $\kappa$. The former we will take to be a kind of timescale parameter and the latter we will mostly set to zero. Let's take a look at the zeroth derivative filter for small values of $\mu$:
 ![Zeroth Derivative Filters](./doc/zdfd0.png "Zeroth Derivative Filters for Small $\mu$")
 For these so-called *minimal* filters, the induced delay is 
-$$
-\frac{\kappa + n + 1}{\mu + \kappa + 2(n+1)}\cdot{L}
-$$
+$\frac{\kappa + n + 1}{\mu + \kappa + 2(n+1)}\cdot{L}$
 where $L$ is the filter length and $n$ the derivative order. The delay is reduced as $\mu$ increases - that's why we regard it as a timescale parameter - and while the filter is a stock-standard moving average for $\mu=0$, it starts looking kinda EMA-ish for $\mu=2$. 
 
 As for the first derivative, things start to get a bit more interesting, and harder to emulate with the difference-of-EMAs approach you were hoping would stand tall:
