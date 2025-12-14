@@ -1,4 +1,4 @@
 .vscode/
-zdf*
-dat/*.zdfo
+/zdf*
+dat/*.zdf*
 google*.html

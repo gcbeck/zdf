@@ -58,7 +58,7 @@ How about when the noisy series isn't quite so nice? We generated some synthetic
 
 Here are both minimal (dashed lines) and delay-free-wannabe $q=2$ zeroth derivative filters (solid lines) applied to the random price trajectories: 
 ![Filtered Prices](./doc/FilteredPriceTrajectories.png "Examples of Filtered Price Series")
-Abrupt shifts in direction are overshot as expected, but the zero-delay compensation nevertheless puts the ZDFs into a different class. That's not entirely fair of course: it would be more equitable to choose a %\mu$ or filter length for the minimal filter that aligns its centroid with that of the non-minimal filter. Apples and oranges notwithstanding, we get some decent-looking first derivatives:
+Abrupt shifts in direction are overshot as expected, but the zero-delay compensation nevertheless puts the ZDFs into a different class. That's not entirely fair of course: it would be more equitable to choose a $\mu$ or filter length for the minimal filter that aligns its centroid with that of the non-minimal filter. Apples and oranges notwithstanding, we get some decent-looking first derivatives:
 ![Filtered Derivatives](./doc/FilteredPriceDerivatives.png "Examples of Filtered Price Derivatives")
 
 ## Build Me Up
