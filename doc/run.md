@@ -9,9 +9,7 @@ Before a fresh filtering run, you'll need to be clear on:
 * `U` The highest-plus-one $\mu$ shape parameter to filter with. `U < 16`. 
 
 The filtering output, when run against a data file of length `M`, is an `M x ((U-M).m)` array organized as follows: 
-$$
-\left[\begin{array}{ccccccc} d_{1}^{\mu_1} & d_{1}^{\mu_2} & ... & d_{1}^{\mu_{U-M}} & d_{2}^{\mu_1} & ... & d_{m}^{\mu_{U-M}} \end{array}\right]
-$$
+$\left[\begin{array}{ccccccc} d_{1}^{\mu_1} & d_{1}^{\mu_2} & ... & d_{1}^{\mu_{U-M}} & d_{2}^{\mu_1} & ... & d_{m}^{\mu_{U-M}} \end{array}\right]$.
 
 1. Retrieve the encoding of the derivatives by concatenating `d_1, d_2, ..., d_m`, in that order, as an argument to `./zdf -d `. For example: ```./zdf -d 0,1,2```
 
